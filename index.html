@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js" integrity="sha512-Y/GIYsd+LaQm6bGysIClyez2HGCIN1yrs94wUrHoRAD5RSURkqqVQEU6mM51O90hqS80ABFTGtiDpSXd2O05nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>Teste de formulário</h1>
+            <div class="formulario">
+                <form action = "index2.html" onsubmit="return valida()">
+                    <div class="itens">
+                        <p>Nome: </p>
+                        <input type="text" name="nome" id="nome" placeholder="Ex: José Augusto">
+
+                        <p>Email: </p>
+                        <input type="email" name="email" id="email" placeholder="Ex: exemplo@email.com">
+                        <p>CPF: </p>
+                        <input type="text" name="cpf" id="cpf" placeholder="111.111.111/11">
+                        
+                        <p>Idade:</p>
+                        <input type="number" name="idade" id="idade">
+
+                        <p>Senha:</p>
+                        <input type="password" name="senha" id="senha">
+
+                        <p>Confirmar senha:</p>
+                        <input type="password" name="confirmarSenha" id="confirmarSenha">
+                    </div>
+                   
+                    <div class="botoes">
+                        <p><input type="submit" name="submit" value="Enviar" id="concluir"> <input type="reset" name="limpar" value="Limpar" id="limpar"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+    <script src="mascara.js"></script>
+</html>
